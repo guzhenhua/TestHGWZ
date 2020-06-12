@@ -7,5 +7,4 @@ public class TestDemo {
     void testDemo(){
         assertEquals(1,1);
     }
-
 }

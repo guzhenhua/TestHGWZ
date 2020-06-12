@@ -21,15 +21,28 @@ public class TestMethod {
     static void tearDownAll() {
         System.out.println("AfterAll");
     }
+
     @Test
     @DisplayName("测试方法1")
+    @Tag("huigui")
     void Test01(){
         System.out.println("Test01");
         assertEquals(1,1);
     }
+
+
     @Test
     @DisplayName("测试方法2")
+    @Tag("maoyan")
     void Test02(){
+        System.out.println("Test02");
+        assertEquals(1,1);
+    }
+
+    @Test
+    @DisplayName("测试方法3")
+    @Tag("maoyan")
+    void Test03(){
         System.out.println("Test02");
         assertEquals(1,1);
     }

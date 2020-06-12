@@ -43,7 +43,16 @@ public class TestMethod {
     @DisplayName("测试方法3")
     @Tag("maoyan")
     void Test03(){
-        System.out.println("Test02");
+        System.out.println("Test03");
+        assertEquals(1,1);
+    }
+
+    @Test
+    @DisplayName("测试方法3")
+    @Tag("maoyan")
+    @Disabled
+    void Test04(){
+        System.out.println("Test04");
         assertEquals(1,1);
     }
 }

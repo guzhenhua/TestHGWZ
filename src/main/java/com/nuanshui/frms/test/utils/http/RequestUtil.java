@@ -1,10 +1,7 @@
 package com.nuanshui.frms.test.utils.http;
-
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-
 import java.net.URL;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.useRelaxedHTTPSValidation;
 

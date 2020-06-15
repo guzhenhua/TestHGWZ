@@ -1,10 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.EnumSource;
-import org.junit.jupiter.params.provider.NullSource;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.*;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.NullString;
+
+import java.util.stream.Stream;
 
 
 public class TestPram {
@@ -22,9 +21,14 @@ public class TestPram {
         Assertions.assertTrue(argus.equals("3"));
     }
 
+    //MethodSource更加灵活
     @ParameterizedTest
-    @EnumSource
-    void testPramDemo2(int argus){
-        Assertions.assertTrue(argus>=0);
+    @MethodSource("stringProvider")
+    void testPramDemo2(String argus){
+        Assertions.assertTrue(argus.equals("123"));
+    }
+
+    static Stream<String> stringProvider(){
+        return Stream.of("123","456");
     }
 }

@@ -21,7 +21,7 @@ public class TestPram {
         Assertions.assertTrue(argus.equals("3"));
     }
 
-    //MethodSource更加灵活
+    //MethodSource更加灵活,如果参数stringProvider不传,系统默认会找与方法同名的方法testPramDemo2()
     @ParameterizedTest
     @MethodSource("stringProvider")
     void testPramDemo2(String argus){

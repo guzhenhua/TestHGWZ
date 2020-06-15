@@ -1,10 +1,12 @@
+package testcase2;
+
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestMethod {
+public class TestMethodgu {
     @BeforeEach
     void init() {
         System.out.println("BeforeEach");
@@ -35,7 +37,7 @@ public class TestMethod {
 
     @Test
     @DisplayName("测试方法2")
-    @Tag("maoyan")
+    @Tag("xitong")
     void Test02(){
         System.out.println("Test02");
         assertEquals(1,1);

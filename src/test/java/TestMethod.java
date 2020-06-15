@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.condition.EnabledOnOs;
+import org.junit.jupiter.api.condition.OS;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -40,6 +42,7 @@ public class TestMethod {
     }
 
     @Test
+    @EnabledOnOs(OS.MAC)
     @DisplayName("测试方法3")
     @Tag("maoyan")
     void Test03(){
@@ -48,7 +51,7 @@ public class TestMethod {
     }
 
     @Test
-    @DisplayName("测试方法3")
+    @DisplayName("测试方法4")
     @Tag("maoyan")
     @Disabled
     void Test04(){

@@ -42,6 +42,7 @@ public class TestPram {
                 arguments("numbe2",2, Arrays.asList("567","896"))
         );
     }
+
     @ParameterizedTest
     @MethodSource("stringProvider1")
     void testPramDemo3(String str,int num,List<String> list){
